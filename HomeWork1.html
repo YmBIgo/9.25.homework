@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>情報基礎2　第1回</title>
+</head>
+<body>
+<h1>宿題①</h1>
+<font color="red" size="6">HTML</font>
+<p class="a">CSS</p>
+<div id="colorLabel">JavaScript</div>
+<p>おまけ→<input type="button" value="クリック" onclick="changeColor()"></p>
+</body>
+</html>
+
+<style type="text/css">
+ 
+p.a{font-size:25pt;
+    color:blue;
+    }
+
+</style>
+
+<script type="text/javascript">
+var colorCount = 0;
+function changeColor(){
+if(colorCount ==0){
+document.getElementById("colorLabel").style.color = "red";
+document.getElementById("colorLabel").style.fontSize = "15pt";
+}else if(colorCount ==1){
+document.getElementById("colorLabel").style.color ="blue";
+document.getElementById("colorLabel").style.fontSize ="17pt"
+}else if(colorCount==2){
+document.getElementById("colorLabel").style.color ="green";
+document.getElementById("colorLabel").style.fontSize ="20pt";
+}else{
+document.getElementById("colorLabel").style.color = "black";
+document.getElementById("colorLabel").style.fontSize="12pt"
+colorCount = -1;
+}
+colorCount++;
+}
+</script>
