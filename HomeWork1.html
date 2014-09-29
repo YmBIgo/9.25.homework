@@ -7,17 +7,41 @@
 <body>
 <h1>宿題①</h1>
 <font color="red" size="6">HTML</font>
+<p>HTMLはウェベページを作るために開発された言語で、現在インターネット上に公開されているウェベページのほとんどはHTMLで作成されている</p>
+<p>基本構造は、</p>
+<img src="html_sample.jpeg" class="example1">
+<p>のようになっている</p>
 <p class="a">CSS</p>
+<p class="b">しかしHTMLで行うことができるのは、ウェブページの大枠を作る事だけであり、細かいウェブ上での動作やレイアウトに関しては対応していないことが多い。そのHTMLに足りないところを埋めるため、背景、文字の色などのレイアウトなどを決めるCSS（細かい動作を決めるJavaScript）がある</p>
+<p class="b">基本構造は、</p>
+<img src ="css_sample.jpeg" class="example2">
+<p class="b">で、これをHTMLの中に入れるか、新しくCSSファイルを作るかすることで使えるようになる。</p>
+<br>
 <div id="colorLabel">JavaScript</div>
 <p>おまけ→<input type="button" value="クリック" onclick="changeColor()"></p>
 </body>
 </html>
 
 <style type="text/css">
- 
+
+body{
+background-image: url("background.jpg");
+}
 p.a{font-size:25pt;
     color:blue;
     }
+p.b{font-size:15pt;
+    color:midnightblue;
+	}
+img.example1{
+width:25%;
+height:25%;
+}
+
+img.example2{
+width:25%;
+height:25%;
+}
 
 </style>
 
@@ -41,3 +65,4 @@ colorCount = -1;
 colorCount++;
 }
 </script>
+
